@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Startup Corner | MOMENTUM IILM 2026</title>
+  <meta name="description" content="Startup Corner — Discover student and emerging startups featured at MOMENTUM IILM 2026.">
+  <link rel="icon" type="image/png" href="../Assets/Logo.png?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            momentumRed: '#D90429',
+            ink: '#070A10',
+            panel: '#0D111A',
+            panel2: '#111827'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    :root { color-scheme: dark; }
+    body {
+      margin: 0;
+      background: #070A10;
+      color: #F8FAFC;
+      font-family: Inter, sans-serif;
+      overflow-x: hidden;
+    }
+    h1,h2,h3,h4 { font-family: Outfit, sans-serif; }
+    .grid-bg {
+      background-image:
+        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+      background-size: 34px 34px;
+    }
+    .startup-card {
+      background: linear-gradient(145deg, rgba(17,24,39,.96), rgba(8,12,19,.98));
+      border: 1px solid rgba(255,255,255,.09);
+      box-shadow: 0 20px 70px rgba(0,0,0,.28);
+      transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+    }
+    .startup-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(217,4,41,.65);
+      box-shadow: 0 28px 90px rgba(0,0,0,.45), 0 0 35px rgba(217,4,41,.09);
+    }
+    .logo-mark {
+      background: radial-gradient(circle at 35% 25%, rgba(217,4,41,.32), rgba(217,4,41,.08) 45%, rgba(255,255,255,.02) 70%);
+      border: 1px solid rgba(217,4,41,.35);
+      box-shadow: inset 0 0 30px rgba(217,4,41,.08), 0 0 30px rgba(217,4,41,.07);
+    }
+    .description-scroll {
+      scrollbar-width: thin;
+      scrollbar-color: rgba(217,4,41,.45) transparent;
+    }
+    .description-scroll::-webkit-scrollbar { width: 5px; }
+    .description-scroll::-webkit-scrollbar-track { background: transparent; }
+    .description-scroll::-webkit-scrollbar-thumb { background: rgba(217,4,41,.45); border-radius: 10px; }
+    .nav-link { position: relative; }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0; right: 0; bottom: -7px;
+      height: 2px;
+      background: #D90429;
+      transform: scaleX(0);
+      transition: transform .2s ease;
+    }
+    .nav-link:hover::after, .nav-link:focus-visible::after { transform: scaleX(1); }
+  </style>
+</head>
+
+<body>
+  <div class="fixed inset-0 grid-bg pointer-events-none opacity-70"></div>
+  <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[720px] h-[420px] rounded-full bg-[#D90429]/10 blur-[130px] pointer-events-none"></div>
+
+  <header class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-[#070A10]/90 backdrop-blur-xl">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 h-[72px] flex items-center justify-between gap-5">
+      <a href="../index.html" class="shrink-0 flex items-center gap-3" aria-label="Back to Momentum home">
+        <img src="../Assets/Logo.png" alt="MOMENTUM 2026" class="h-10 sm:h-12 w-auto object-contain">
+      </a>
+
+      <nav class="hidden md:flex items-center gap-7 text-[11px] font-black tracking-[.16em] uppercase">
+        <a class="nav-link text-white/70 hover:text-white transition-colors" href="../index.html">Home</a>
+        <a class="nav-link text-[#FF4A5F]" href="startup-corner.html" aria-current="page">Startup Corner</a>
+        <a class="nav-link text-white/70 hover:text-white transition-colors" href="../team/team.html">Team</a>
+        <a class="nav-link text-white/70 hover:text-white transition-colors" href="../index.html#contact-section">Contact</a>
+      </nav>
+
+      <a href="../index.html" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg border border-white/10 bg-white/[.04] text-[10px] font-black tracking-widest uppercase text-white/80 hover:bg-[#D90429] hover:border-[#D90429] transition-all">
+        <i data-lucide="arrow-left" class="w-4 h-4"></i>
+        <span class="hidden sm:inline">Momentum Home</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="relative z-10 pt-28 pb-20">
+    <section class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#D90429]/30 bg-[#D90429]/10 text-[10px] font-black tracking-[.3em] uppercase text-[#FF4A5F]">
+          <span class="w-2 h-2 rounded-full bg-[#D90429] animate-pulse"></span>
+          MOMENTUM 2026
+        </div>
+        <h1 class="mt-6 text-5xl sm:text-6xl lg:text-8xl font-black italic uppercase tracking-[-.05em] leading-[.9]">
+          STARTUP <span class="text-[#D90429]">CORNER</span>
+        </h1>
+        <div class="h-px w-40 mx-auto my-7 bg-gradient-to-r from-transparent via-[#D90429] to-transparent"></div>
+        <p class="text-sm sm:text-base lg:text-lg text-white/55 leading-relaxed max-w-3xl mx-auto">
+          Meet the startups featured at MOMENTUM. Explore their ideas, discover the founders behind them, and click a startup card to visit its available website or profile.
+        </p>
+      </div>
+
+      <div class="mt-14 flex items-center justify-between gap-4">
+        <div class="text-[10px] font-mono font-bold tracking-[.3em] uppercase text-white/35">
+          10 FEATURED STARTUPS
+        </div>
+        <div class="h-px flex-1 bg-white/10"></div>
+      </div>
+
+      <section id="startup-grid" class="mt-7 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6" aria-label="Featured startups"></section>
+    </section>
+  </main>
+
+  <footer class="relative z-10 border-t border-white/10 py-8 px-5 sm:px-8 lg:px-10 text-center text-[10px] font-bold tracking-[.2em] uppercase text-white/35">
+    © 2026 MOMENTUM — PAN-INDIA MANAGEMENT SCHOOL FESTIVAL
+  </footer>
+
+  <script>
+    const startups = [
+  {
+    "name": "Foundr X",
+    "logo": "logos/foundr-x.jpg",
+    "desc": "Foundr X is a LinkedIn personal branding agency that helps founders build a strong, credible, and authentic presence online.\n\nWe work closely with founders to understand their story, expertise, and goals, and turn them into a clear personal brand. From brand positioning and LinkedIn strategy to profile optimization, content creation, and content management, we help founders build a consistent presence and meaningful visibility on LinkedIn.\n\nOur approach is simple and focused. We take care of the strategy and execution, allowing founders to focus on building their businesses while we help build the personal brand behind them.",
+    "founder": "Dipti Sharma and Rajeshwari Jha",
+    "phone": "7667763581 and 7667795869",
+    "email": "dipti2030sharma@gmail.com and rajeshwarijhaofficial@gmail.com",
+    "links": "LinkedIn: https://www.linkedin.com/company/foundr-x/?viewAsMember=true.  and Instagram: https://www.instagram.com/thefoundrx?igsi=N3E2cHJxbWdiZWJ6",
+    "urls": [
+      "https://www.linkedin.com/company/foundr-x/?viewAsMember=true",
+      "https://www.instagram.com/thefoundrx?igsi=N3E2cHJxbWdiZWJ6"
+    ]
+  },    
+  {
+    "name": "Sway Urban",
+    "logo": "logos/sway-urban.png",
+    "desc": "Sway Urban is a youth-focused streetwear and customization brand offering trendy oversized and regular-fit T-shirts, unique Gen-Z designs, and customized apparel. Along with fashion, Sway Urban also provides customized gifting products like mugs and more, as well as custom T-shirts for corporate gifting and bulk orders.",
+    "founder": "Tanmay Agrawal",
+    "phone": "9654293365",
+    "email": "swayurbanindia@gmail.com",
+    "links": "https://swayurban.com/ , https://www.instagram.com/swayurbanindia",
+    "urls": [
+      "https://swayurban.com/",
+      "https://www.instagram.com/swayurbanindia"
+    ]
+  },
+  {
+    "name": "Modx",
+    "logo": "logos/modx.png",
+    "desc": "ModifyX is a vehicle customization and aftermarket platform designed to make vehicle modification easier, more transparent, and trustworthy.\n\nWe aim to help vehicle owners discover customization options, compare products and prices, visualize their desired modifications, and connect with reliable service providers for installation.\n\nThis survey is part of our market research to understand how people currently modify their vehicles, what challenges they face, how they choose products and workshops, and what they would expect from a platform like ModX.",
+    "founder": "Pushan bharti",
+    "phone": "9304814848",
+    "email": "pushan.bharti.gnbba2029@iilm.edu",
+    "links": "Not published right now",
+    "urls": []
+  },
+  {
+    "name": "Parthasya",
+    "logo": "logos/parthasya.jpeg",
+    "desc": "Parthasya is an AI-powered diagnostic and analytics platform designed specifically for JEE Main aspirants. Instead of just serving standard quiz questions, it functions as a 'Marks Leak Engine' that parses a student's test performance to isolate exactly why they lose marks—separating simple calculation slips from deep conceptual gaps. It features an adaptive practice arena, an AI physics coach sandbox, and automated micro-quizzes engineered to target and permanently fix a student's unique test vulnerabilities.",
+    "founder": "Sandip Patil",
+    "phone": "7016945096",
+    "email": "sandippatil.7016@gmail.com",
+    "links": "https://www.linkedin.com/in/sandip-patil-4a8a413b0?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+    "urls": [
+      "https://www.linkedin.com/in/sandip-patil-4a8a413b0?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+    ]
+  },
+  {
+    "name": "COLLEGEMATE",
+    "logo": "logos/collegemate.jpeg",
+    "desc": "CollegeMate is a student-centric edtech platform that simplifies the college journey from admission to career.\nWe provide personalized College guidance, Admission and Scholarship support, Peer to Peer Mentorship, Certifications, Internships, Skill development, and Placement preparation.\nOur platform connects students with the Right colleges, Right mentors or Seniors, opportunities, and resources at every stage.\nWe aim to make higher education more informed, accessible, and career-focused for students across India.",
+    "founder": "Shivam Mittal",
+    "phone": "91-8287006304",
+    "email": "collegemate1710@gmail.com",
+    "links": "https://collegemate.in/",
+    "urls": [
+      "https://collegemate.in/"
+    ]
+  },
+  {
+    "name": "Myst Juels",
+    "logo": "logos/myst-juels.jpg",
+    "desc": "Mystjuels is a contemporary fashion-jewellery brand bringing together modern designs, elegant details, and trend-forward aesthetics. From everyday minimal pieces to statement jewellery, Mystjuels is all about helping you express your style with accessories that stand out across pan India. Myst Juels have successfully served 1000+ customers and have over 5000 followers on socials.",
+    "founder": "Dhruv Jain",
+    "phone": "8178338979",
+    "email": "dhruv.26scs1003004257@gn.iilm.edu",
+    "links": "instagram:- https://www.instagram.com/mystjuels?igsi=OWZ5djJqbWRndW50",
+    "urls": [
+      "https://www.instagram.com/mystjuels?igsi=OWZ5djJqbWRndW50"
+    ]
+  },
+  {
+    "name": "Metroflow",
+    "logo": "logos/metroflow.png",
+    "desc": "**MetroFlow is a smart metro-commuting platform that helps passengers know how crowded their upcoming metro coaches are before they board.** We collect real-time crowd data from daily commuters and use it to provide reliable crowd-level information. As our dataset grows, we plan to use **AI/ML to predict crowd patterns**, helping passengers choose less crowded coaches and plan their journeys more efficiently.\n\nWe’re starting with the **Noida Metro Aqua Line** and aim to scale MetroFlow across metro networks.",
+    "founder": "Ansh Pandey",
+    "phone": "8506905888",
+    "email": "Anshpandey701@gmail.com",
+    "links": "https://metroflow.in/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAUDSDtwZG9mAmZkaWQWUNk5MYI7vc1PTqj5xHXPAZERx52D8GV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp--Wo4MVVRVOqUWm83JFyQG4h6KF3HTRMa-ksfn2TjTimm9Zu0kyN80qYRrh_aem_mPckfMjIGy4irDhTzQvdcg",
+    "urls": [
+      "https://metroflow.in/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAUDSDtwZG9mAmZkaWQWUNk5MYI7vc1PTqj5xHXPAZERx52D8GV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp--Wo4MVVRVOqUWm83JFyQG4h6KF3HTRMa-ksfn2TjTimm9Zu0kyN80qYRrh_aem_mPckfMjIGy4irDhTzQvdcg"
+    ]
+  },
+  {
+    "name": "Club base",
+    "logo": "logos/club-base.png",
+    "desc": "# Meet Club base\n\n### Smarter Attendance. Less Manual Work. More Reliable Records.\n\nManaging attendance for college club events shouldn’t mean carrying a register, maintaining Excel sheets, repeatedly collecting student details, or worrying about proxy attendance.\n\nYet that is still how attendance is often managed.\n\nClub base is a smart attendance management platform built specifically for college clubs.** It simplifies the entire attendance process by combining **QR-based attendance, face recognition, and location verification** into one easy-to-use system.\n\n### The Problem\n\nTraditional attendance methods create three major problems:\n\n* 📝 **Manual work:** Writing names on paper or entering details into Excel takes significant time and effort.\n* ⏱️ **Slow attendance:** Managing attendance for an event can take 30+ minutes, especially when done manually.\n* ⚠️ **Proxy & fake attendance:** QR codes can be shared or displayed inside an auditorium, while someone else can manually mark attendance for absent students.\n\nThere is also another unnecessary problem: students repeatedly filling in the same basic information every time a club shares a Google Form.\n\n### The Solution\n\nClub base turns attendance into a **fast, digital, and location-aware process.**\n\n**For large events:**\nStudents simply scan a QR code to mark their attendance. The system verifies their location and ensures they are within the designated event area before recording attendance.\n\n**For smaller club events:**\nClub members can be identified through **face recognition**, allowing organizers to scan multiple attendees quickly instead of manually checking names.\n\nTogether, **QR verification + location awareness + face recognition** significantly reduce the opportunities for proxy and fake attendance while making the process dramatically faster.\n\n### Before Clubbase → After Clubbase\n\n| Traditional Process                           | With Clubbase                                    |\n| --------------------------------------------- | ------------------------------------------------ |\n| 📝 Pen & paper registers                      | 📱 Digital attendance                            |\n| 📊 Manual Excel entries                       | ⚡ Attendance recorded automatically              |\n| ⏱️ 30+ minutes of manual work                 | 🚀 Attendance in under a minute for small groups |\n| 🔁 Students repeatedly enter the same details | ✨ Details are already available                  |\n| 📋 Manually verify names                      | 👤 Face recognition for smaller events           |\n| 📱 QR codes can be shared or misused          | 📍 QR + location verification                    |\n| ⚠️ Higher risk of proxy attendance            | 🔐 Stronger attendance integrity                 |\n| 📂 Data scattered across sheets/forms         | 🗂️ Centralized club attendance data             |\n\n### And Clubbase Goes Beyond Attendance\n\nAttendance is only the starting point.\n\nClubbase also provides a **smart alternative to repetitive Google Forms**, allowing students to submit responses without repeatedly entering information the club already has.\n\nEach club can also have its own **AI-powered agent** that can understand the club's available data and help organizers retrieve information, analyze attendance and member data, and perform relevant tasks through natural-language instructions.\n\n### The Result\n\n**Less paperwork. Less waiting. Less repetitive data entry. Less opportunity for manipulation.**\n\nInstead of spending valuable event time **managing attendance**, club teams can spend it **running their events.**\n\n**Club base — built to make college club management faster, smarter, and more reliable.**",
+    "founder": "Suryakant",
+    "phone": "9389903074",
+    "email": "suryakant.gnbba2029@iilm.edu",
+    "links": "https://club-base.lovable.app/",
+    "urls": [
+      "https://club-base.lovable.app/"
+    ]
+  },
+  {
+    "name": "ROMBUS",
+    "logo": "logos/rombus.png",
+    "desc": "Using AI still means explaining yourself over and over. You prompt, it misreads you, you rephrase, you go back and forth — and by the time it finally gets what you meant, you’ve done half the work yourself.\n\nROMBUS fixes that by actually talking to you first. It asks the right questions, understands what you’re really after, and saves that as real context — built through conversation, not scraped from your chats. In Hindi, English, Hinglish, however you naturally speak.\n\nThat saved context is what makes the output better. You get personalized answers, not generalized ones. Less explaining, sharper thinking.",
+    "founder": "Raj avtarit singh",
+    "phone": "7830609295",
+    "email": "Rajavtarit@gmail.com",
+    "links": "https://rombus.vercel.app/",
+    "urls": [
+      "https://rombus.vercel.app/"
+    ]
+  },
+  {
+    "name": "Sync In Order",
+    "logo": "logos/sync-in-order.png",
+    "desc": "SyncInOrder is an AI-powered platform built for e-commerce businesses to simplify inventory management, reduce RTO (Return to Origin) losses, and manage all orders from one smart dashboard. It helps brands track inventory in real time, predict risky COD orders, automate alerts, and improve profitability through data-driven insights. AI-based RTO prediction tools are increasingly used in e-commerce to reduce return losses and optimize operations.",
+    "founder": "Priyank Rakholia",
+    "phone": "8273792119",
+    "email": "priyank.rakholia.gnmba27@iilm.edu",
+    "links": "https://www.syncinorder.com",
+    "urls": [
+      "https://www.syncinorder.com"
+    ]
+  },
+  
+];
+
+    function esc(value) {
+      return String(value ?? '').replace(/[&<>"']/g, ch => ({
+        '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'
+      })[ch]);
+    }
+
+    function initials(name) {
+      return name.split(/\s+/).filter(Boolean).slice(0,2).map(word => word[0]).join('').toUpperCase();
+    }
+
+    function firstUrl(startup) {
+      return startup.urls && startup.urls.length ? startup.urls[0] : '';
+    }
+
+    function descriptionText(desc) {
+      return desc
+        .replace(/^#+\s*/gm, '')
+        .replace(/\*\*/g, '')
+        .replace(/\*/g, '')
+        .replace(/\|/g, ' ')
+        .replace(/\n{2,}/g, '\n')
+        .trim();
+    }
+
+    function renderStartups() {
+      const grid = document.getElementById('startup-grid');
+      grid.innerHTML = startups.map((startup, index) => {
+        const url = firstUrl(startup);
+        const hasUrl = Boolean(url);
+        const safeUrl = esc(url);
+        const cardAction = hasUrl
+          ? `onclick="visitStartup(${
+              JSON.stringify(url).replace(/"/g, '&quot;')
+            })" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();visitStartup(${
+              JSON.stringify(url).replace(/"/g, '&quot;')
+            })}" tabindex="0" role="link"`
+          : 'aria-disabled="true"';
+
+        const links = (startup.urls || []).map((link, i) => `
+          <a href="${esc(link)}" target="_blank" rel="noopener noreferrer"
+             onclick="event.stopPropagation()"
+             class="inline-flex items-center gap-1.5 text-[9px] font-black tracking-widest uppercase text-white/45 hover:text-[#FF4A5F] transition-colors">
+            ${i === 0 ? 'Primary Link' : 'Social Link'}
+            <i data-lucide="arrow-up-right" class="w-3 h-3"></i>
+          </a>
+        `).join('');
+
+        return `
+          <article class="startup-card rounded-2xl p-6 sm:p-7 flex flex-col min-h-[500px] cursor-${hasUrl ? 'pointer' : 'default'}"
+                   ${cardAction}>
+            <div class="flex items-start justify-between gap-4">
+              <div class="logo-mark w-20 h-20 sm:w-24 sm:h-24 rounded-2xl flex items-center justify-center shrink-0 overflow-hidden">
+                <img
+                  src="${esc(startup.logo || '')}"
+                  alt="${esc(startup.name)} logo"
+                  class="w-full h-full object-contain p-3"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+                >
+                <span class="text-2xl sm:text-3xl font-black italic tracking-tight text-white" style="display:none;">
+                  ${esc(initials(startup.name))}
+                </span>
+              </div>
+              <div class="text-right">
+                <div class="text-[9px] font-mono font-bold tracking-[.25em] uppercase text-[#D90429]">STARTUP ${String(index+1).padStart(2,'0')}</div>
+                <div class="mt-2 inline-flex items-center gap-1.5 text-[9px] font-bold uppercase tracking-widest ${hasUrl ? 'text-emerald-400/80' : 'text-white/30'}">
+                  <span class="w-1.5 h-1.5 rounded-full ${hasUrl ? 'bg-emerald-400' : 'bg-white/20'}"></span>
+                  ${hasUrl ? 'LINK AVAILABLE' : 'LINK NOT PUBLISHED'}
+                </div>
+              </div>
+            </div>
+
+            <h2 class="mt-7 text-2xl sm:text-3xl font-black italic uppercase tracking-tight text-white">${esc(startup.name)}</h2>
+
+            <div class="description-scroll mt-4 flex-1 max-h-44 overflow-y-auto pr-2 text-sm leading-6 text-white/55 whitespace-pre-line">
+              ${esc(descriptionText(startup.desc))}
+            </div>
+
+            <div class="mt-6 pt-5 border-t border-white/10 space-y-3">
+              <div class="flex items-start gap-3">
+                <i data-lucide="user-round" class="w-4 h-4 text-[#D90429] mt-0.5 shrink-0"></i>
+                <div>
+                  <div class="text-[8px] font-black tracking-[.22em] uppercase text-white/30">FOUNDER</div>
+                  <div class="mt-1 text-sm font-bold text-white/85">${esc(startup.founder)}</div>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <i data-lucide="phone" class="w-4 h-4 text-[#D90429] mt-0.5 shrink-0"></i>
+                <a href="tel:${esc(startup.phone.replace(/[^0-9+]/g,''))}" onclick="event.stopPropagation()" class="text-sm font-semibold text-white/65 hover:text-[#FF4A5F] transition-colors break-all">${esc(startup.phone)}</a>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <i data-lucide="mail" class="w-4 h-4 text-[#D90429] mt-0.5 shrink-0"></i>
+                <a href="mailto:${esc(startup.email.split(' and ')[0])}" onclick="event.stopPropagation()" class="text-sm font-semibold text-white/65 hover:text-[#FF4A5F] transition-colors break-all">${esc(startup.email)}</a>
+              </div>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between gap-3">
+              <div class="flex flex-wrap gap-x-4 gap-y-2">${links || '<span class="text-[9px] font-black tracking-widest uppercase text-white/25">No published link</span>'}</div>
+              <span class="w-10 h-10 rounded-full border border-white/10 bg-white/[.04] flex items-center justify-center shrink-0 ${hasUrl ? 'text-[#D90429]' : 'text-white/20'}">
+                <i data-lucide="${hasUrl ? 'arrow-up-right' : 'lock'}" class="w-4 h-4"></i>
+              </span>
+            </div>
+          </article>
+        `;
+      }).join('');
+
+      lucide.createIcons();
+    }
+
+    function visitStartup(url) {
+      if (url) window.location.href = url;
+    }
+
+    document.addEventListener('DOMContentLoaded', renderStartups);
+  </script>
+</body>
+</html>
