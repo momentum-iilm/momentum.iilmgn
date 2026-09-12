@@ -119,9 +119,9 @@
           STARTUP <span class="text-[#D90429]">CORNER</span>
         </h1>
         <div class="h-px w-40 mx-auto my-7 bg-gradient-to-r from-transparent via-[#D90429] to-transparent"></div>
-        <p class="text-sm sm:text-base lg:text-lg text-white/55 leading-relaxed max-w-3xl mx-auto">
-          Meet the startups featured at MOMENTUM. Explore their ideas, discover the founders behind them, and click a startup card to visit its available website or profile.
-        </p>
+       <p class="text-sm sm:text-base lg:text-lg text-white/55 leading-relaxed max-w-3xl mx-auto">
+  Meet the startups featured at MOMENTUM - <strong class="text-white">innovative ventures built by the students of IILM University.</strong> Explore their ideas, discover the founders behind them, and click a startup card to visit its available website or profile.
+</p>
       </div>
 
       <div class="mt-14 flex items-center justify-between gap-4">
@@ -147,7 +147,7 @@
     "desc": "Foundr X is a LinkedIn personal branding agency that helps founders build a strong, credible, and authentic presence online.\n\nWe work closely with founders to understand their story, expertise, and goals, and turn them into a clear personal brand. From brand positioning and LinkedIn strategy to profile optimization, content creation, and content management, we help founders build a consistent presence and meaningful visibility on LinkedIn.\n\nOur approach is simple and focused. We take care of the strategy and execution, allowing founders to focus on building their businesses while we help build the personal brand behind them.",
     "founder": "Dipti Sharma and Rajeshwari Jha",
     "phone": "7667763581 and 7667795869",
-    "email": "dipti2030sharma@gmail.com and rajeshwarijhaofficial@gmail.com",
+    "email": "dipti2030sharma@gmail.com\nrajeshwarijhaofficial@gmail.com",
     "links": "LinkedIn: https://www.linkedin.com/company/foundr-x/?viewAsMember=true.  and Instagram: https://www.instagram.com/thefoundrx?igsi=N3E2cHJxbWdiZWJ6",
     "urls": [
       "https://www.linkedin.com/company/foundr-x/?viewAsMember=true",
@@ -357,7 +357,7 @@
 
               <div class="flex items-start gap-3">
                 <i data-lucide="mail" class="w-4 h-4 text-[#D90429] mt-0.5 shrink-0"></i>
-                <a href="mailto:${esc(startup.email.split(' and ')[0])}" onclick="event.stopPropagation()" class="text-sm font-semibold text-white/65 hover:text-[#FF4A5F] transition-colors break-all">${esc(startup.email)}</a>
+                <a href="mailto:${esc(startup.email.split(' and ')[0])}" onclick="event.stopPropagation()" class="text-sm font-semibold text-white/65 hover:text-[#FF4A5F] transition-colors break-all whitespace-pre-line">${esc(startup.email).replace(/ and /g, '\n')}</a>
               </div>
             </div>
 
